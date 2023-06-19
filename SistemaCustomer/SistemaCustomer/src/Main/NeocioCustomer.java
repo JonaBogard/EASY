@@ -1,0 +1,52 @@
+package Main;
+
+public class NeocioCustomer {
+	String id;
+	String dato;
+	DataCustomer dc = null;
+
+	public NeocioCustomer() {
+		dc = new DataCustomer();
+	}
+
+	public boolean insertarCustomer() {
+		if (dc.insertarCustomer(this)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public boolean consultarCustomer() {
+		if (dc.consultarCustomer(this)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public boolean actualizarCustomer() {
+		if (dc.actualizarCustomer(this)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getDato() {
+		return dato;
+	}
+
+	public void setDato(String dato) {
+		this.dato = dato;
+	}
+
+}

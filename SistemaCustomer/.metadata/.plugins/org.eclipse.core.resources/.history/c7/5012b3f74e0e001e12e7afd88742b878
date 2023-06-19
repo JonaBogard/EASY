@@ -1,0 +1,48 @@
+package Main;
+
+public class NeocioCustomer {
+	String id;
+	String dato;
+DataOrden dp=null;
+	
+public NegocioCustomer() {
+		dp = new DataOrden();
+	}
+	
+	public boolean insertarOrden() {
+		if(dp.insertarProducto(this)) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
+	public boolean consultarOrden() {
+		if(dp.consultarOrden(this)) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	public boolean actualizarOrden() {
+		if(dp.actualizarOrden(this)) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getDato() {
+		return dato;
+	}
+	public void setDato(String dato) {
+		this.dato = dato;
+	}
+	
+
+}
