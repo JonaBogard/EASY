@@ -1,0 +1,22 @@
+package Main;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class Test {
+
+	@org.junit.jupiter.api.Test
+	void testInsertarCustomer() {
+		fail("Not yet implemented");
+	}
+
+	@org.junit.jupiter.api.Test
+	void testConsultarCustomer() {
+		fail("Not yet implemented");
+	}
+
+	@org.junit.jupiter.api.Test
+	void testActualizarCustomer() {
+		fail("Not yet implemented");
+	}
+
+}
